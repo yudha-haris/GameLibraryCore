@@ -21,8 +21,9 @@ let package = Package(
         .target(
             name: "GameLibraryCore",
             dependencies: [
-                            .product(name: "RealmSwift", package: "realm-swift"),
-                        ]),
+                .product(name: "RealmSwift", package: "realm-swift"),
+            ]
+        ),
         .testTarget(
             name: "GameLibraryCoreTests",
             dependencies: ["GameLibraryCore"]),
